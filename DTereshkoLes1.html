@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app = "TerDenApp" >
+<head>
+    <meta charset="UTF-8">
+
+    <script src="angular.min.js"></script>
+
+    <title>Title</title>
+</head>
+<body>
+
+    <label>Enter please two integers into the forms below...
+    </label>
+
+    <div ng-app="TerDenApp" ng-controller="MainController">
+        <p><input id="number1" placeholder="Enter the number" type="number" ng-model="number1"></p>
+        <p><input id="number2" placeholder="Enter the number" type="number" ng-model="number2"></p>
+
+        <p><input id="summarize" placeholder="Here will be the sum" type="number" value="{{ number1 + number2 }}" readonly></p>
+    </div>
+
+    <script src="SummOfTwo.js"> </script>
+    <script src="MainController.js"> </script>
+
+</body>
+</html>
