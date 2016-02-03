@@ -16,7 +16,9 @@
         <p><input id="number1" placeholder="Enter the number" type="number" ng-model="number1"></p>
         <p><input id="number2" placeholder="Enter the number" type="number" ng-model="number2"></p>
 
-        <p><input id="summarize" placeholder="Here will be the sum" type="number" value="{{ number1 + number2 }}" readonly></p>
+        <!--<p><input id="summarize" placeholder="Here will be the sum" type="number" value="{{ number1 + number2 }}" readonly></p>-->
+        <!-- или можно так-->
+        <p><input id="summarize" placeholder="Here will be the sum" type="number" value="{{ summOfTwo() }}" readonly></p>
     </div>
 
     <script src="SummOfTwo.js"> </script>
